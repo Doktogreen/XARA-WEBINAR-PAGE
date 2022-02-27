@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: fit-content !important;
+  max-width: inherit !important;
+  margin: 0;
+ }
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+ #navbar {
+   width: 100%;
+   padding: 20px 0px;
+   height: fit-content;
+   display: flex;
+   background-color: #2e3f4f;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: sticky;
+ }
+ #navbar > img {
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: 0 auto;
+   width: 50px;
+ }
+ header {
+   width: 100%;
+   margin-bottom: 1%;
+ }
+ header > h1 {
+  font-size: 46px;
+  margin: 0px 0px !important;
+}
+h3 {
+  margin: 10px 0px !important;
+}
+.second-h1 {
+  line-height: 50px !important;
+}
+ #footer {
+  width: 100%;
+  padding: 10px 0px;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  height: fit-content;
+  display: flex;
+  background-color: #2e3f4f;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#footer > div {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 5px 0px;
+  padding-top: 13px !important;
+  /* transform: translate(-50%, -50%); */
+  border-top: 2px solid transparent;
+  border-image-source: -webkit-linear-gradient(to right, #2fa5e7, #4741c0, #ff3265);
+  border-image-source: -o-linear-gradient(to right, #2fa5e7, #4741c0, #ff3265);
+  border-image-source: -moz-linear-gradient(to right, #2fa5e7, #4741c0, #ff3265);
+  border-image-source: linear-gradient(to right, #2fa5e7, #4741c0, #ff3265);
+  border-image-slice: 1;
+}
+.line {
+  width: inherit;
+  
+}
+#footer > div > div.socials {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+}
+#footer > div > p {
+  color: #fff;
+  padding: 0px 0px;
+  font-size: 12px;
+  margin: 10px 0px 0px 0px !important;
+}
+.socials > a {
+  width: 17px;
+}
+ h1, h3, p { 
+  color: #22313e; 
+  font-family: Poppins;
+  text-align: center;
+ }
+.webinar {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+  margin: 4vmin auto 6vmin auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  margin: 0vmin 0vmin 16vmin 0vmin!important;
+  max-width: 3600px;
+  margin: 0px auto;
+}
+
+.accordions-container {
+width: 330px;
+padding: 20px;
+margin: 10px;
+background-color: #f4f4f4;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 668px) {
+  .all_form, .all_accordion {
+    width: 100% !important;
+  }
+  .container {
+    flex-wrap: wrap !important;
+  }
+}
+button.accordion {
+  width: 100%;
+  border-bottom: 1.1px solid #cccccc !important;
+  background-color: #f4f4f4;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 10px 0px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+button.accordion:after {
+  content: '\25b6';
+  color: #cccccc !important;
+  font-family: "fontawesome";
+  font-size: 12px;
+  float: right;
+}
+
+button.accordion.is-open:after {
+  content: '▼';
+  color: #cccccc !important;
+  font-family: "fontawesome";
+  font-size: 12px;
+  float: bottom !important;
+}
+
+button.accordion:hover, button.accordion.is-open {
+  background-color: #f4f4f4;
+}
+
+.accordion-content {
+  background-color: #f4f4f4 !important;
+  border-bottom: 1px solid #cccccc;
+  padding: 0px 15px 0px 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+.accordion-content > p {
+  text-align: left !important;
+  margin: 4px 0px !important;
+  font-size: 14px;
+}
+
+ /*--------------------
+      Form Container
+---------------------*/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 6px;
+  width: 330px;
+  padding: 5px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+#namy, #companyName, #fullName, #workEmail, #any, #phone{
+  color: #b2b2b2 !important;
+  font-family: Poppins;
+}
+img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+h1 > span {
+  display: inline-block;
+  transform-origin: 80% 80%;
+}
+h1 > span.animate {
+  animation: waveAnimation 0.5s ease-out;
+  animation-iteration-count: 5;
+}
+
+.form {
+  padding: 15px 15px;
+  margin: 0px 0px 3px 0px !important;
+}
+.form-cover  {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap !important;
+  flex-direction: row;
+}
+.form__control {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  position: relative;
+}
+.country-code-input {
+  margin-right: 7px;
+  width: 70px !important;
+  height: inherit !important;
+}
+.last_cover {
+  margin-left: 7px;
+}
+.full_name_input {
+  margin-right: 7px;
+}
+.form__control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form__control input {
+  border: 2px solid #646464;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 12px;
+  width: 100%;
+  padding: 10px;
+  outline-color: #646464;
+}
+.any {
+  width: 20% !important;
+}
+.form__control.success input {
+  border-color: #646464;
+}
+
+.form__control.error input {
+  border-color: #646464;
+}
+
+.form__control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.form__control.success i.fa-check-circle {
+  visibility: visible;
+  color: #b2b2b2;
+}
+
+.form__control.error i.fa-exclamation-circle {
+  visibility: visible;
+}
+
+.form__control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form__control.error small {
+  color: #b2b2b2;
+  visibility: visible;
+}
+
+.form button {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  background-color: #2fa5e7;
+  border: 2px solid #2fa5e7;
+  font-family: Poppins;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #ffffff;
+  display: block;
+  width: 40%;
+  padding: 8px 25px;
+  margin: 25px auto 10px auto;
+  font-size: 14px;
+  font-weight: bold;
+}
